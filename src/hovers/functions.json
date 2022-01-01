@@ -1,0 +1,114 @@
+{
+  "attribute": {
+    "prefix": "attribute",
+    "name": "Attribute",
+    "description": "Accesses a 'dynamic' attribute of a variable.",
+    "body": "attribute(${object}, ${method}, ${arguments})",
+    "reference": "https://twig.symfony.com/doc/3.x/functions/attribute.html"
+  },
+  "block": {
+    "prefix": "block",
+    "name": "Block",
+    "description": "Displays a block from another template.",
+    "body": "block('${name}', '${template}.twig')",
+    "reference": "https://twig.symfony.com/doc/3.x/functions/block.html"
+  },
+  "constant": {
+    "prefix": "constant",
+    "name": "Constant",
+    "description": "Returns the constant value for a given string.",
+    "body": "constant('${name}', ${object})",
+    "reference": "https://twig.symfony.com/doc/3.x/functions/constant.html"
+  },
+  "country_timezones": {
+    "prefix": "country_timezones",
+    "name": "Country_timezones",
+    "description": "Returns the names of the timezones associated with a given country code.",
+    "body": "country_timezones('${locale}')",
+    "reference": "https://twig.symfony.com/doc/3.x/functions/country_timezones.html"
+  },
+  "cycle": {
+    "prefix": "cycle",
+    "name": "Cycle",
+    "description": "Cycles on an array of values.",
+    "body": "cycle(${array}, ${iteration})",
+    "reference": "https://twig.symfony.com/doc/3.x/functions/cycle.html"
+  },
+  "date": {
+    "prefix": "date",
+    "name": "Date",
+    "description": "Converts an argument to a date to allow date comparison.",
+    "body": "date(${date}, '${timezone}')",
+    "reference": "https://twig.symfony.com/doc/3.x/functions/date.html"
+  },
+  "dump": {
+    "prefix": "dump",
+    "name": "Dump",
+    "description": "Dumps information about a template variable.",
+    "body": "dump(${variable})",
+    "reference": "https://twig.symfony.com/doc/3.x/functions/dump.html"
+  },
+  "html_classes": {
+    "prefix": "html_classes",
+    "name": "Html_classes",
+    "description": "Returns a string by conditionally joining class names together.",
+    "body": "html_classes('${staticClass}', { '${dynamicClass}': ${value} })",
+    "reference": "https://twig.symfony.com/doc/3.x/functions/html_classes.html"
+  },
+  "include": {
+    "prefix": "include",
+    "name": "Include",
+    "description": "Returns rendered content of a template.",
+    "body": "include('${template}')",
+    "reference": "https://twig.symfony.com/doc/3.x/functions/include.html"
+  },
+  "max": {
+    "prefix": "max",
+    "name": "Max",
+    "description": "Returns the biggest value of a sequence of values. When called with an object, it ignores keys and only compares values.",
+    "body": "max(${sequence})",
+    "reference": "https://twig.symfony.com/doc/3.x/functions/max.html"
+  },
+  "min": {
+    "prefix": "min",
+    "name": "Min",
+    "description": "Returns the lowest value of a sequence of values. When called with an object, it ignores keys and only compares values..",
+    "body": "min(${sequence})",
+    "reference": "https://twig.symfony.com/doc/3.x/functions/min.html"
+  },
+  "parent": {
+    "prefix": "parent",
+    "name": "Parent",
+    "description": "Renders the contents of the parent block when overriding a block.",
+    "body": "parent()",
+    "reference": "https://twig.symfony.com/doc/3.x/functions/parent.html"
+  },
+  "random": {
+    "prefix": "random",
+    "name": "Random",
+    "description": "Returns a random value depending on the supplied parameter.",
+    "body": "random(${sequence})",
+    "reference": "https://twig.symfony.com/doc/3.x/functions/random.html"
+  },
+  "range": {
+    "prefix": "range",
+    "name": "Range",
+    "description": "Returns a list containing an arithmetic progression of integers.",
+    "body": "range(${start}, ${end}, ${step})",
+    "reference": "https://twig.symfony.com/doc/3.x/functions/range.html"
+  },
+  "source": {
+    "prefix": "source",
+    "name": "Source",
+    "description": "Returns the content of a template without rendering it.",
+    "body": "source('${template}')",
+    "reference": "https://twig.symfony.com/doc/3.x/functions/source.html"
+  },
+  "template_from_string": {
+    "prefix": "template_from_string",
+    "name": "Template_from_string",
+    "description": "Loads a template from a string. You can also specify a template name that will be part of related error message.",
+    "body": "template_from_string('${template}', '${templateName}')",
+    "reference": "https://twig.symfony.com/doc/3.x/functions/template_from_string.html"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "name": "twig-language-support",
+  "displayName": "Twig Language Support",
+  "description": "Complete support for Twig language v3",
+  "categories": [
+    "Programming Languages",
+    "Language Packs",
+    "Snippets"
+  ],
+  "keywords": [
+    "Twig",
+    "twig"
+  ],
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Roman Holdos <rholdos@outlook.sk>",
+  "publisher": "rholdos",
+  "icon": "assets/icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rholdos/vscode-twig-language-support.git"
+  },
+  "main": "./build/extension.js",
+  "activationEvents": [
+    "onLanguage:twig"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "twig",
+        "aliases": [
+          "Twig",
+          "twig"
+        ],
+        "extensions": [
+          ".twig"
+        ],
+        "configuration": "./languages/twig.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "twig",
+        "scopeName": "source.twig",
+        "path": "./syntaxes/twig.json",
+        "embeddedLanguages": {
+          "text.html.basic": "html",
+          "source.css": "css",
+          "source.js": "javascript"
+        }
+      }
+    ],
+    "snippets": [
+      {
+        "language": "twig",
+        "path": "./snippets/functions.json"
+      },
+      {
+        "language": "twig",
+        "path": "./snippets/tags.json"
+      }
+    ]
+  },
+  "capabilities": {
+    "hoverProvider": "true"
+  },
+  "engines": {
+    "vscode": "^1.43.0",
+    "node": "*"
+  },
+  "dependencies": {
+    "vscode-css-languageservice": "^5.1.9",
+    "vscode-html-languageservice": "^4.2.0",
+    "vscode-languageclient": "^6.1.3",
+    "vscode-languageserver": "^7.0.0",
+    "vscode-languageserver-textdocument": "^1.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.0",
+    "@types/vscode": "^1.43.0",
+    "typescript": "^4.4.3"
+  },
+  "scripts": {
+    "build": "tsc -b -w",
+    "production": "tsc -b"
+  }
+}

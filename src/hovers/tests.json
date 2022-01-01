@@ -1,0 +1,65 @@
+{
+  "constant": {
+    "prefix": "constant",
+    "name": "Constant",
+    "description": "Checks if a variable has the exact same value as a constant. Can check constants from object instances as well.",
+    "body": "constant('${name}')",
+    "reference": "https://twig.symfony.com/doc/3.x/tests/constant.html"
+  },
+  "defined": {
+    "prefix": "defined",
+    "name": "Defined",
+    "description": "Checks if a variable is defined in the current context.",
+    "body": "defined",
+    "reference": "https://twig.symfony.com/doc/3.x/tests/defined.html"
+  },
+  "divisibleby": {
+    "prefix": "divisibleby",
+    "name": "Divisibleby",
+    "description": "Checks if a variable is divisible by a number.",
+    "body": "divisible by(${number})",
+    "reference": "https://twig.symfony.com/doc/3.x/tests/divisibleby.html"
+  },
+  "empty": {
+    "prefix": "empty",
+    "name": "Empty",
+    "description": "Checks if a variable is an empty string, empty array, empty hash, exactly false, or exactly null.",
+    "body": "empty",
+    "reference": "https://twig.symfony.com/doc/3.x/tests/empty.html"
+  },
+  "even": {
+    "prefix": "even",
+    "name": "Even",
+    "description": "Checks if the given number is even.",
+    "body": "even",
+    "reference": "https://twig.symfony.com/doc/3.x/tests/even.html"
+  },
+  "iterable": {
+    "prefix": "iterable",
+    "name": "Iterable",
+    "description": "Checks if a variable is an array or a traversable object.",
+    "body": "iterable",
+    "reference": "https://twig.symfony.com/doc/3.x/tests/iterable.html"
+  },
+  "null": {
+    "prefix": "null",
+    "name": "Null",
+    "description": "Checks if the variable is null.",
+    "body": "null",
+    "reference": "https://twig.symfony.com/doc/3.x/tests/null.html"
+  },
+  "odd": {
+    "prefix": "odd",
+    "name": "Odd",
+    "description": "Checks if the given number is odd.",
+    "body": "odd",
+    "reference": "https://twig.symfony.com/doc/3.x/tests/odd.html"
+  },
+  "sameas": {
+    "prefix": "sameas",
+    "name": "Sameas",
+    "description": "Checks if a variable is the same as another variable. Equivalent to '===' in PHP.",
+    "body": "same as(${variable})",
+    "reference": "https://twig.symfony.com/doc/3.x/tests/sameas.html"
+  }
+}

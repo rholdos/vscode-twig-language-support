@@ -1,0 +1,82 @@
+{
+  "attribute": {
+    "prefix": "attribute",
+    "description": "Accesses a 'dynamic' attribute of a variable.",
+    "body": "attribute(${1:object}, ${2:method}, ${3:arguments})"
+  },
+  "block": {
+    "prefix": "block",
+    "description": "Displays a block from another template.",
+    "body": "block('${1:name}', '${2:template}.twig')"
+  },
+  "constant": {
+    "prefix": "constant",
+    "description": "Returns the constant value for a given string.",
+    "body": "constant('${1:name}', ${2:object})"
+  },
+  "country_timezones": {
+    "prefix": "country_timezones",
+    "description": "Returns the names of the timezones associated with a given country code.",
+    "body": "country_timezones('${1:locale}')"
+  },
+  "cycle": {
+    "prefix": "cycle",
+    "description": "Cycles on an array of values.",
+    "body": "cycle(${1:array}, ${2:iteration})"
+  },
+  "date": {
+    "prefix": "date",
+    "description": "Converts an argument to a date to allow date comparison.",
+    "body": "date(${1:date}, '${2:timezone}')"
+  },
+  "dump": {
+    "prefix": "dump",
+    "description": "Dumps information about a template variable.",
+    "body": "dump(${1:variable})"
+  },
+  "html_classes": {
+    "prefix": "html_classes",
+    "description": "Returns a string by conditionally joining class names together.",
+    "body": "html_classes('${1:staticClass}', { '${2:dynamicClass}': ${3:value} })"
+  },
+  "include": {
+    "prefix": "include",
+    "description": "Returns rendered content of a template.",
+    "body": "include('${1:template}')"
+  },
+  "max": {
+    "prefix": "max",
+    "description": "Returns the biggest value of a sequence of values. When called with an object, it ignores keys and only compares values.",
+    "body": "max(${1:sequence})"
+  },
+  "min": {
+    "prefix": "min",
+    "description": "Returns the lowest value of a sequence of values. When called with an object, it ignores keys and only compares values..",
+    "body": "min(${1:sequence})"
+  },
+  "parent": {
+    "prefix": "parent",
+    "description": "Renders the contents of the parent block when overriding a block.",
+    "body": "parent()"
+  },
+  "random": {
+    "prefix": "random",
+    "description": "Returns a random value depending on the supplied parameter.",
+    "body": "random(${1:sequence})"
+  },
+  "range": {
+    "prefix": "range",
+    "description": "Returns a list containing an arithmetic progression of integers.",
+    "body": "range(${1:start}, ${2:end}, ${1:step})"
+  },
+  "source": {
+    "prefix": "source",
+    "description": "Returns the content of a template without rendering it.",
+    "body": "source('${1:template}')"
+  },
+  "template_from_string": {
+    "prefix": "template_from_string",
+    "description": "Loads a template from a string. You can also specify a template name that will be part of related error message.",
+    "body": "template_from_string('${1:template}', '${2:templateName}')"
+  }
+}

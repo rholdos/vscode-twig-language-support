@@ -1,0 +1,380 @@
+{
+  "abs": {
+    "prefix": "abs",
+    "name": "Abs",
+    "description": "Returns the absolute value.",
+    "body": "abs",
+    "reference": "https://twig.symfony.com/doc/3.x/filters/abs.html"
+  },
+  "batch": {
+    "prefix": "batch",
+    "name": "Batch",
+    "description": "Returns a list of lists with the given number of items.",
+    "body": "batch(${size}, ${fill}, ${preserveKeys})",
+    "reference": "https://twig.symfony.com/doc/3.x/filters/batch.html"
+  },
+  "capitalize": {
+    "prefix": "capitalize",
+    "name": "Capitalize",
+    "description": "Capitalizes a the first letter of the given string.",
+    "body": "capitalize",
+    "reference": "https://twig.symfony.com/doc/3.x/filters/capitalize.html"
+  },
+  "column": {
+    "prefix": "column",
+    "name": "Column",
+    "description": "Returns the values from a single column in the given array.",
+    "body": "column('${name}')",
+    "reference": "https://twig.symfony.com/doc/3.x/filters/column.html"
+  },
+  "convert_encoding": {
+    "prefix": "convert_encoding",
+    "name": "Convert_encoding",
+    "description": "Converts a string from one encoding to another.",
+    "body": "convert_encoding('${to}', '${from}')",
+    "reference": "https://twig.symfony.com/doc/3.x/filters/convert_encoding.html"
+  },
+  "country_name": {
+    "prefix": "country_name",
+    "name": "Country_name",
+    "description": "Returns the country name given its ISO-3166 two-letter code.",
+    "body": "country_name('${locale}')",
+    "reference": "https://twig.symfony.com/doc/3.x/filters/country_name.html"
+  },
+  "currency_name": {
+    "prefix": "currency_name",
+    "name": "Currency_name",
+    "description": "Returns the currency name given its three-letter code.",
+    "body": "currency_name('${locale}')",
+    "reference": "https://twig.symfony.com/doc/3.x/filters/currency_name.html"
+  },
+  "currency_symbol": {
+    "prefix": "currency_symbol",
+    "name": "Currency_symbol",
+    "description": "Returns the currency symbol given its three-letter code.",
+    "body": "currency_symbol('${locale}')",
+    "reference": "https://twig.symfony.com/doc/3.x/filters/currency_symbol.html"
+  },
+  "data_uri": {
+    "prefix": "data_uri",
+    "name": "Data_uri",
+    "description": "Generates a URL using the data scheme as defined in RFC 2397.",
+    "body": "data_uri('${mime}', ${parameters})",
+    "reference": "https://twig.symfony.com/doc/3.x/filters/data_uri.html"
+  },
+  "date": {
+    "prefix": "date",
+    "name": "Date",
+    "description": "Formats a date to a given format.",
+    "body": "date('${format}', '${timezone}')",
+    "reference": "https://twig.symfony.com/doc/3.x/filters/date.html"
+  },
+  "date_modify": {
+    "prefix": "date_modify",
+    "name": "Date_modify",
+    "description": "Modifies a date with a given modifier string.",
+    "body": "date_modify('${modifier}')",
+    "reference": "https://twig.symfony.com/doc/3.x/filters/date_modify.html"
+  },
+  "default": {
+    "prefix": "default",
+    "name": "Default",
+    "description": "Returns the passed default value if the value is undefined or empty, otherwise the value of the variable.",
+    "body": "default('${defaultValue}')",
+    "reference": "https://twig.symfony.com/doc/3.x/filters/default.html"
+  },
+  "escape": {
+    "prefix": "escape",
+    "name": "Escape",
+    "description": "Escapes a string using strategies that depend on the context.",
+    "body": "escape('${strategy}', '${charset}')",
+    "reference": "https://twig.symfony.com/doc/3.x/filters/escape.html"
+  },
+  "filter": {
+    "prefix": "filter",
+    "name": "Filter",
+    "description": "Filters elements of a sequence using an arrow function.",
+    "body": "filter(${sequence}, ${arrowFunction})",
+    "reference": "https://twig.symfony.com/doc/3.x/filters/filter.html"
+  },
+  "first": {
+    "prefix": "first",
+    "name": "First",
+    "description": ".Returns the first element of a sequence.",
+    "body": "first",
+    "reference": "https://twig.symfony.com/doc/3.x/filters/first.html"
+  },
+  "format": {
+    "prefix": "format",
+    "name": "Format",
+    "description": "Formats a given string by replacing the placeholders. Equivalent to 'sprintf' in PHP.",
+    "body": "format(${replacePairs})",
+    "reference": "https://twig.symfony.com/doc/3.x/filters/format.html"
+  },
+  "format_currency": {
+    "prefix": "format_currency",
+    "name": "Format_currency",
+    "description": "Formats a number as a currency.",
+    "body": "format_currency('${currency}', {${attrs}}, '${locale}')",
+    "reference": "https://twig.symfony.com/doc/3.x/filters/format_currency.html"
+  },
+  "format_date": {
+    "prefix": "format_date",
+    "name": "Format_date",
+    "description": "Formats a date.",
+    "body": "format_date('${locale}', '${dateFormat}', '${pattern}', '${timezone}', '${calendar}')",
+    "reference": "https://twig.symfony.com/doc/3.x/filters/format_date.html"
+  },
+  "format_datetime": {
+    "prefix": "format_datetime",
+    "name": "Format_datetime",
+    "description": "Formats a date time.",
+    "body": "format_datetime('${locale}', '${dateFormat}', '${timeFormat}', '${pattern}', '${timezone}', '${calendar}')",
+    "reference": "https://twig.symfony.com/doc/3.x/filters/format_datetime.html"
+  },
+  "format_number": {
+    "prefix": "format_number",
+    "name": "Format_number",
+    "description": "Formats a number.",
+    "body": "format_number('${locale}', {${attrs}}, ${style})",
+    "reference": "https://twig.symfony.com/doc/3.x/filters/format_number.html"
+  },
+  "format_time": {
+    "prefix": "format_time",
+    "name": "Format_time",
+    "description": ".",
+    "body": "format_time('${locale}', '${timeFormat}', '${pattern}', '${timezone}', '${calendar}')",
+    "reference": "https://twig.symfony.com/doc/3.x/filters/format_time.html"
+  },
+  "html_to_markdown": {
+    "prefix": "html_to_markdown",
+    "name": "Html_to_markdown",
+    "description": "Converts a block of HTML to Markdown.",
+    "body": "html_to_markdown",
+    "reference": "https://twig.symfony.com/doc/3.x/filters/html_to_markdown.html"
+  },
+  "inky_to_html": {
+    "prefix": "inky_to_html",
+    "name": "Inky_to_html",
+    "description": "Processes an 'inky' email template.",
+    "body": "inky_to_html",
+    "reference": "https://twig.symfony.com/doc/3.x/filters/inky_to_html.html"
+  },
+  "inline_css": {
+    "prefix": "inline_css",
+    "name": "Inline_css",
+    "description": "Filters inline CSS styles in HTML documents.",
+    "body": "inline_css(source('${stylesheetFilePath}'))",
+    "reference": "https://twig.symfony.com/doc/3.x/filters/inline_css.html"
+  },
+  "join": {
+    "prefix": "join",
+    "name": "Join",
+    "description": "Returns a string which is the concatenation of the items of the given sequence. A second parameter can also be provided that will be the separator used between the last two items of the sequence.",
+    "body": "join('${glue}', '${and}')",
+    "reference": "https://twig.symfony.com/doc/3.x/filters/join.html"
+  },
+  "json_encode": {
+    "prefix": "json_encode",
+    "name": "Json_encode",
+    "description": "Returns the JSON representation of a value.",
+    "body": "json_encode(${options})",
+    "reference": "https://twig.symfony.com/doc/3.x/filters/json_encode.html"
+  },
+  "keys": {
+    "prefix": "keys",
+    "name": "Keys",
+    "description": "Returns the keys of an array.",
+    "body": "keys",
+    "reference": "https://twig.symfony.com/doc/3.x/filters/keys.html"
+  },
+  "language_name": {
+    "prefix": "language_name",
+    "name": "Language_name",
+    "description": "Returns the language name given its two-letter code.",
+    "body": "language_name('${locale}')",
+    "reference": "https://twig.symfony.com/doc/3.x/filters/language_name.html"
+  },
+  "last": {
+    "prefix": "last",
+    "name": "Last",
+    "description": "Returns the last element of a sequence or a string.",
+    "body": "last",
+    "reference": "https://twig.symfony.com/doc/3.x/filters/last.html"
+  },
+  "length": {
+    "prefix": "length",
+    "name": "Length",
+    "description": "Returns the number of items of a sequence or the length of a string.",
+    "body": "length",
+    "reference": "https://twig.symfony.com/doc/3.x/filters/length.html"
+  },
+  "locale_name": {
+    "prefix": "locale_name",
+    "name": "Locale_name",
+    "description": "Returns the locale name given its two-letter code.",
+    "body": "locale_name('${locale}')",
+    "reference": "https://twig.symfony.com/doc/3.x/filters/locale_name.html"
+  },
+  "lower": {
+    "prefix": "lower",
+    "name": "Lower",
+    "description": "Converts a value to lowercase.",
+    "body": "lower",
+    "reference": "https://twig.symfony.com/doc/3.x/filters/lower.html"
+  },
+  "map": {
+    "prefix": "map",
+    "name": "Map",
+    "description": "Applies an arrow function to the elements of a sequence.",
+    "body": "map(${arrowFunction})",
+    "reference": "https://twig.symfony.com/doc/3.x/filters/map.html"
+  },
+  "markdown_to_html": {
+    "prefix": "markdown_to_html",
+    "name": "Markdown_to_html",
+    "description": "Converts a block of Markdown to HTML.",
+    "body": "markdown_to_html",
+    "reference": "https://twig.symfony.com/doc/3.x/filters/markdown_to_html.html"
+  },
+  "merge": {
+    "prefix": "merge",
+    "name": "Merge",
+    "description": "Merges an array with another array.",
+    "body": "merge(${array})",
+    "reference": "https://twig.symfony.com/doc/3.x/filters/merge.html"
+  },
+  "nl2br": {
+    "prefix": "nl2br",
+    "name": "Nl2br",
+    "description": "Inserts HTML line breaks before all newlines in a string.",
+    "body": "nl2br",
+    "reference": "https://twig.symfony.com/doc/3.x/filters/nl2br.html"
+  },
+  "number_format": {
+    "prefix": "number_format",
+    "name": "Number_format",
+    "description": "Formats a number.",
+    "body": "number_format(${decimal}, '${decimal_point}', '${thousand_sep}')",
+    "reference": "https://twig.symfony.com/doc/3.x/filters/number_format.html"
+  },
+  "raw": {
+    "prefix": "raw",
+    "name": "Raw",
+    "description": "Marks the value as being 'safe', which means that this variable will not be auto-escaped.",
+    "body": "raw",
+    "reference": "https://twig.symfony.com/doc/3.x/filters/raw.html"
+  },
+  "reduce": {
+    "prefix": "reduce",
+    "name": "Reduce",
+    "description": "Iteratively reduces a sequence to a single value using an arrow function.",
+    "body": "reduce(${arrowFunction}, ${initialValue})",
+    "reference": "https://twig.symfony.com/doc/3.x/filters/reduce.html"
+  },
+  "replace": {
+    "prefix": "replace",
+    "name": "Replace",
+    "description": "Formats a given string by replacing the placeholders.",
+    "body": "replace({${replacePairs}})",
+    "reference": "https://twig.symfony.com/doc/3.x/filters/replace.html"
+  },
+  "reverse": {
+    "prefix": "reverse",
+    "name": "Reverse",
+    "description": "Reverses a sequence or a string.",
+    "body": "reverse(${preserveKeys})",
+    "reference": "https://twig.symfony.com/doc/3.x/filters/reverse.html"
+  },
+  "round": {
+    "prefix": "round",
+    "name": "Round",
+    "description": "Rounds a number to a given precision.",
+    "body": "round(${precision}, '${method}')",
+    "reference": "https://twig.symfony.com/doc/3.x/filters/round.html"
+  },
+  "slice": {
+    "prefix": "slice",
+    "name": "Slice",
+    "description": "Extracts a slice of a sequence or a string.",
+    "body": "slice(${start}, ${length}, ${preserve_keys})",
+    "reference": "https://twig.symfony.com/doc/3.x/filters/slice.html"
+  },
+  "slug": {
+    "prefix": "slug",
+    "name": "Slug",
+    "description": "Transforms a given string into another string that only includes safe ASCII characters.",
+    "body": "slug('${separator}', '${locale}')",
+    "reference": "https://twig.symfony.com/doc/3.x/filters/slug.html"
+  },
+  "sort": {
+    "prefix": "sort",
+    "name": "Sort",
+    "description": "Sorts an array.",
+    "body": "sort(${arrowFunction})",
+    "reference": "https://twig.symfony.com/doc/3.x/filters/sort.html"
+  },
+  "spaceless": {
+    "prefix": "spaceless",
+    "name": "Spaceless",
+    "description": "Remove whitespace between HTML tags (not whitespace within HTML tags or whitespace in plain text).",
+    "body": "spaceless",
+    "reference": "https://twig.symfony.com/doc/3.x/filters/spaceless.html"
+  },
+  "split": {
+    "prefix": "split",
+    "name": "Split",
+    "description": "Splits a string by the given delimiter and returns a list of strings.",
+    "body": "split('${delimiter}', ${limit})",
+    "reference": "https://twig.symfony.com/doc/3.x/filters/split.html"
+  },
+  "striptags": {
+    "prefix": "striptags",
+    "name": "Striptags",
+    "description": "Strips SGML/XML tags and replace adjacent whitespace by one space.",
+    "body": "striptags('${allowableTags}')",
+    "reference": "https://twig.symfony.com/doc/3.x/filters/striptags.html"
+  },
+  "timezone_name": {
+    "prefix": "timezone_name",
+    "name": "Timezone_name",
+    "description": "Returns the timezone name given a timezone identifier.",
+    "body": "timezone_name('${locale}')",
+    "reference": "https://twig.symfony.com/doc/3.x/filters/timezone_name.html"
+  },
+  "title": {
+    "prefix": "title",
+    "name": "Title",
+    "description": "Returns a titlecased version of the value. names will start with uppercase letters, all remaining characters are lowercase.",
+    "body": "title",
+    "reference": "https://twig.symfony.com/doc/3.x/filters/title.html"
+  },
+  "trim": {
+    "prefix": "trim",
+    "name": "Trim",
+    "description": "Strips whitespace or other characters from the beginning and end of a string.",
+    "body": "trim(${characterMask}, ${side})",
+    "reference": "https://twig.symfony.com/doc/3.x/filters/trim.html"
+  },
+  "u": {
+    "prefix": "u",
+    "name": "U",
+    "description": "Wraps a text in a Unicode object (a Symfony UnicodeString instance) that exposes methods to 'manipulate' the string.",
+    "body": "u",
+    "reference": "https://twig.symfony.com/doc/3.x/filters/u.html"
+  },
+  "upper": {
+    "prefix": "upper",
+    "name": "Upper",
+    "description": "Converts a value to uppercase.",
+    "body": "upper",
+    "reference": "https://twig.symfony.com/doc/3.x/filters/upper.html"
+  },
+  "url_encode": {
+    "prefix": "url_encode",
+    "name": "Url_encode",
+    "description": "Encodes a given string as URL segment or an array as query string.",
+    "body": "url_encode",
+    "reference": "https://twig.symfony.com/doc/3.x/filters/url_encode.html"
+  }
+}
