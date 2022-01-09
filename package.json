@@ -18,7 +18,7 @@
   "icon": "assets/icon.png",
   "repository": {
     "type": "git",
-    "url": "https://github.com/rholdos/vscode-twig-language-support.git"
+    "url": "https://github.com/rholdos/vscode-twig-language-support"
   },
   "main": "./build/extension.js",
   "activationEvents": [
