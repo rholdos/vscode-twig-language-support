@@ -1,47 +1,47 @@
 {
-  "constant": {
-    "label": "constant",
-    "detail": "Checks if a variable has the exact same value as a constant. Can check constants from object instances as well.",
-    "insertText": "constant('${1:name}')"
-  },
-  "defined": {
-    "label": "defined",
-    "detail": "Checks if a variable is defined in the current context.",
-    "insertText": "defined"
-  },
-  "divisibleby": {
-    "label": "divisibleby",
-    "detail": "Checks if a variable is divisible by a number.",
-    "insertText": "divisible by(${1:number})"
-  },
-  "empty": {
-    "label": "empty",
-    "detail": "Checks if a variable is an empty string, empty array, empty hash, exactly false, or exactly null.",
-    "insertText": "empty"
-  },
-  "even": {
-    "label": "even",
-    "detail": "Checks if the given number is even.",
-    "insertText": "even"
-  },
-  "iterable": {
-    "label": "iterable",
-    "detail": "Checks if a variable is an array or a traversable object.",
-    "insertText": "iterable"
-  },
-  "null": {
-    "label": "null",
-    "detail": "Checks if the variable is null.",
-    "insertText": "null"
-  },
-  "odd": {
-    "label": "odd",
-    "detail": "Checks if the given number is odd.",
-    "insertText": "odd"
-  },
-  "sameas": {
-    "label": "sameas",
-    "detail": "Checks if a variable is the same as another variable. Equivalent to '===' in PHP.",
-    "insertText": "same as(${1:variable})"
-  }
+	"constant": {
+		"label": "constant",
+		"detail": "Checks if a variable has the exact same value as a constant. Can check constants from object instances as well.",
+		"insertText": "constant('${1:name}')"
+	},
+	"defined": {
+		"label": "defined",
+		"detail": "Checks if a variable is defined in the current context.",
+		"insertText": "defined"
+	},
+	"divisibleby": {
+		"label": "divisibleby",
+		"detail": "Checks if a variable is divisible by a number.",
+		"insertText": "divisible by(${1:number})"
+	},
+	"empty": {
+		"label": "empty",
+		"detail": "Checks if a variable is an empty string, empty array, empty hash, exactly false, or exactly null.",
+		"insertText": "empty"
+	},
+	"even": {
+		"label": "even",
+		"detail": "Checks if the given number is even.",
+		"insertText": "even"
+	},
+	"iterable": {
+		"label": "iterable",
+		"detail": "Checks if a variable is an array or a traversable object.",
+		"insertText": "iterable"
+	},
+	"null": {
+		"label": "null",
+		"detail": "Checks if the variable is null.",
+		"insertText": "null"
+	},
+	"odd": {
+		"label": "odd",
+		"detail": "Checks if the given number is odd.",
+		"insertText": "odd"
+	},
+	"sameas": {
+		"label": "sameas",
+		"detail": "Checks if a variable is the same as another variable. Equivalent to '===' in PHP.",
+		"insertText": "same as(${1:variable})"
+	}
 }

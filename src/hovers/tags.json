@@ -1,156 +1,233 @@
 {
-  "apply": {
-    "prefix": "apply",
-    "name": "Apply",
-    "description": "Applies Twig filters on a block of template data. Filters can be chained and accept arguments.",
-    "body": "{% apply '${filter}' %}\n\t...\n{% endapply %}",
-    "reference": "https://twig.symfony.com/doc/3.x/tags/apply.html"
-  },
-  "autoescape": {
-    "prefix": "autoescape",
-    "name": "Autoescape",
-    "description": "Applies automatic escaping on a block of template data. More escaping strategies are available (html | js | ...) ",
-    "body": "{% autoescape '${strategy}' %}\n\t...\n{% endautoescape %}",
-    "reference": "https://twig.symfony.com/doc/3.x/tags/autoescape.html"
-  },
-  "block": {
-    "prefix": "block",
-    "name": "Block",
-    "description": "Prints a block of template data from another template.",
-    "body": "{% block '${name}' %}\n\t...\n{% endblock ${name} %}",
-    "reference": "https://twig.symfony.com/doc/3.x/tags/block.html"
-  },
-  "cache": {
-    "prefix": "cache",
-    "name": "Cache",
-    "description": "Caches a template fragment for given amount of time in seconds.",
-    "body": "{% cache '${cacheKey}' ttl(${cacheTTL}) %}\n\t...\n{% endcache %}",
-    "reference": "https://twig.symfony.com/doc/3.x/tags/cache.html"
-  },
-  "deprecated": {
-    "prefix": "deprecated",
-    "name": "Deprecated",
-    "description": "Generates a deprecation notice, when the deprecated tag is used in a template.",
-    "body": "{% deprecated ${notice} %}",
-    "reference": "https://twig.symfony.com/doc/3.x/tags/deprecated.html"
-  },
-  "do": {
-    "prefix": "do",
-    "name": "Do",
-    "description": "Works exactly like the regular variable expression ({{ ... }}) just that it doesn't print anything.",
-    "body": "{% do ${expression} %}",
-    "reference": "https://twig.symfony.com/doc/3.x/tags/do.html"
-  },
-  "embed": {
-    "prefix": "embed",
-    "name": "Embed",
-    "description": "Includes another template's contents, but also allows you to override any block defined inside the included template.",
-    "body": "{% embed '${filename}.twig' %}\n\t...\n{% endembed %}",
-    "reference": "https://twig.symfony.com/doc/3.x/tags/embed.html"
-  },
-  "extends": {
-    "prefix": "extends",
-    "name": "Extends",
-    "description": "Extends another template.",
-    "body": "{% extends '${filename}.twig' %}",
-    "reference": "https://twig.symfony.com/doc/3.x/tags/extends.html"
-  },
-  "flush": {
-    "prefix": "flush",
-    "name": "Flush",
-    "description": "Flushes the output buffer.",
-    "body": "{% flush %}",
-    "reference": "https://twig.symfony.com/doc/3.x/tags/flush.html"
-  },
-  "for": {
-    "prefix": "for",
-    "name": "For",
-    "description": "Loops over each item in a sequence.",
-    "body": "{% for ${item} in ${sequence} %}\n\t...\n{% endfor %}",
-    "reference": "https://twig.symfony.com/doc/3.x/tags/for.html"
-  },
-  "from": {
-    "prefix": "from",
-    "name": "From",
-    "description": "Imports macro names into the current namespace.",
-    "body": "{% from '${template}' import ${name} %}",
-    "reference": "https://twig.symfony.com/doc/3.x/tags/from.html"
-  },
-  "if": {
-    "prefix": "if",
-    "name": "If",
-    "description": "Conditional statement. Allows conditional execution of code fragments.",
-    "body": "{% if ${condition} %}\n\t...\n{% endif %}",
-    "reference": "https://twig.symfony.com/doc/3.x/tags/if.html"
-  },
-  "else": {
-    "prefix": "else",
-    "name": "Else",
-    "description": "Conditional statement. Allows conditional execution of code fragments.",
-    "body": "{% else %}",
-    "reference": "https://twig.symfony.com/doc/3.x/tags/else.html"
-  },
-  "import": {
-    "prefix": "import",
-    "name": "Import",
-    "description": "Imports macro names in a local variable.",
-    "body": "{% import '${template}' as ${name} %}",
-    "reference": "https://twig.symfony.com/doc/3.x/tags/import.html"
-  },
-  "include": {
-    "prefix": "include",
-    "name": "Include",
-    "description": "Includes a template and outputs the rendered content of that file.",
-    "body": "{% include '${template}' %}",
-    "reference": "https://twig.symfony.com/doc/3.x/tags/include.html"
-  },
-  "macro": {
-    "prefix": "macro",
-    "name": "Macro",
-    "description": "Reuses template fragments.",
-    "body": "{% macro ${name}(${arguments}) %}\n\t...\n{% endmacro %}",
-    "reference": "https://twig.symfony.com/doc/3.x/tags/macro.html"
-  },
-  "sandbox": {
-    "prefix": "sandbox",
-    "name": "Sandbox",
-    "description": "Enables the sandbox mode for an included template.",
-    "body": "{% sandbox %}\t{% include '${template}' %}{% endsandbox %}",
-    "reference": "https://twig.symfony.com/doc/3.x/tags/sandbox.html"
-  },
-  "set": {
-    "prefix": "set",
-    "name": "Set",
-    "description": "Assigns value to a variable.",
-    "body": "{% set ${variable} = ${value} %}",
-    "reference": "https://twig.symfony.com/doc/3.x/tags/set.html"
-  },
-  "set block": {
-    "prefix": "set block",
-    "name": "Set block",
-    "description": "Assigns code fragment to a variable.",
-    "body": "{% set ${variable} %}\n\t...\n{% endset %}",
-    "reference": "https://twig.symfony.com/doc/3.x/tags/set.html"
-  },
-  "use": {
-    "prefix": "use",
-    "name": "Use",
-    "description": "Import the blocks defined in 'blocks.html' into the current template. Works like macros, but for blocks.",
-    "body": "{% use '${template}' %}",
-    "reference": "https://twig.symfony.com/doc/3.x/tags/use.html"
-  },
-  "verbatim": {
-    "prefix": "verbatim",
-    "name": "Verbatim",
-    "description": "Marks section as being raw text that should not be parsed.",
-    "body": "{% verbatim %}\n\t...\n{% endverbatim %}",
-    "reference": "https://twig.symfony.com/doc/3.x/tags/verbatim.html"
-  },
-  "with": {
-    "prefix": "with",
-    "name": "With",
-    "description": "Creates a new inner scope. Variables set within this scope are not visible outside.",
-    "body": "{% with { ${variable}: ${value} } %}\n\t...\n{% with %}",
-    "reference": "https://twig.symfony.com/doc/3.x/tags/with.html"
-  }
+	"apply": {
+		"prefix": "apply",
+		"name": "Apply",
+		"description": "Applies Twig filters on a block of template data. Filters can be chained and accept arguments.",
+		"body": "{% apply ${filter} %}\n\t...\n{% endapply %}",
+		"reference": "https://twig.symfony.com/doc/3.x/tags/apply.html"
+	},
+	"endapply": {
+		"prefix": "endapply",
+		"name": "Endapply",
+		"description": "Closes \"apply\" tag.",
+		"body": "{% endapply %}",
+		"reference": "https://twig.symfony.com/doc/3.x/tags/apply.html"
+	},
+	"autoescape": {
+		"prefix": "autoescape",
+		"name": "Autoescape",
+		"description": "Applies automatic escaping on a block of template data. More escaping strategies are available (html | js | ...) ",
+		"body": "{% autoescape '${strategy}' %}\n\t...\n{% endautoescape %}",
+		"reference": "https://twig.symfony.com/doc/3.x/tags/autoescape.html"
+	},
+	"endautoescape": {
+		"prefix": "endautoescape",
+		"name": "Endautoescape",
+		"description": "Closes \"autoescape\" tag.",
+		"body": "{% endautoescape %}",
+		"reference": "https://twig.symfony.com/doc/3.x/tags/autoescape.html"
+	},
+	"block": {
+		"prefix": "block",
+		"name": "Block",
+		"description": "Prints a block of template data from another template.",
+		"body": "{% block ${name} %}\n\t...\n{% endblock %}",
+		"reference": "https://twig.symfony.com/doc/3.x/tags/block.html"
+	},
+	"endblock": {
+		"prefix": "endblock",
+		"name": "Endblock",
+		"description": "Closes \"block\" tag.",
+		"body": "{% endblock %}",
+		"reference": "https://twig.symfony.com/doc/3.x/tags/block.html"
+	},
+	"cache": {
+		"prefix": "cache",
+		"name": "Cache",
+		"description": "Caches a template fragment for given amount of time in seconds.",
+		"body": "{% cache '${cacheKey}' ttl(${cacheTTL}) %}\n\t...\n{% endcache %}",
+		"reference": "https://twig.symfony.com/doc/3.x/tags/cache.html"
+	},
+	"endcache": {
+		"prefix": "endcache",
+		"name": "Endcache",
+		"description": "Closes \"cache\" tag.",
+		"body": "{% endcache %}",
+		"reference": "https://twig.symfony.com/doc/3.x/tags/cache.html"
+	},
+	"deprecated": {
+		"prefix": "deprecated",
+		"name": "Deprecated",
+		"description": "Generates a deprecation notice, when the deprecated tag is used in a template.",
+		"body": "{% deprecated ${notice} %}",
+		"reference": "https://twig.symfony.com/doc/3.x/tags/deprecated.html"
+	},
+	"do": {
+		"prefix": "do",
+		"name": "Do",
+		"description": "Works exactly like the regular variable expression ({{ ... }}) just that it doesn't print anything.",
+		"body": "{% do ${expression} %}",
+		"reference": "https://twig.symfony.com/doc/3.x/tags/do.html"
+	},
+	"embed": {
+		"prefix": "embed",
+		"name": "Embed",
+		"description": "Includes another template's contents, but also allows you to override any block defined inside the included template.",
+		"body": "{% embed '${filename}.twig' %}\n\t...\n{% endembed %}",
+		"reference": "https://twig.symfony.com/doc/3.x/tags/embed.html"
+	},
+	"endembed": {
+		"prefix": "endembed",
+		"name": "Endembed",
+		"description": "Closes \"embed\" tag.",
+		"body": "{% endembed %}",
+		"reference": "https://twig.symfony.com/doc/3.x/tags/embed.html"
+	},
+	"extends": {
+		"prefix": "extends",
+		"name": "Extends",
+		"description": "Extends another template.",
+		"body": "{% extends '${filename}.twig' %}",
+		"reference": "https://twig.symfony.com/doc/3.x/tags/extends.html"
+	},
+	"flush": {
+		"prefix": "flush",
+		"name": "Flush",
+		"description": "Flushes the output buffer.",
+		"body": "{% flush %}",
+		"reference": "https://twig.symfony.com/doc/3.x/tags/flush.html"
+	},
+	"for": {
+		"prefix": "for",
+		"name": "For",
+		"description": "Loops over each item in a sequence.",
+		"body": "{% for ${item} in ${sequence} %}\n\t...\n{% endfor %}",
+		"reference": "https://twig.symfony.com/doc/3.x/tags/for.html"
+	},
+	"endfor": {
+		"prefix": "endfor",
+		"name": "Endfor",
+		"description": "Closes \"end\" tag.",
+		"body": "{% endfor %}",
+		"reference": "https://twig.symfony.com/doc/3.x/tags/for.html"
+	},
+	"from": {
+		"prefix": "from",
+		"name": "From",
+		"description": "Imports macro names into the current namespace.",
+		"body": "{% from '${template}' import ${name} %}",
+		"reference": "https://twig.symfony.com/doc/3.x/tags/from.html"
+	},
+	"if": {
+		"prefix": "if",
+		"name": "If",
+		"description": "Conditional statement. Allows conditional execution of code fragments.",
+		"body": "{% if ${condition} %}\n\t...\n{% endif %}",
+		"reference": "https://twig.symfony.com/doc/3.x/tags/if.html"
+	},
+	"endif": {
+		"prefix": "endif",
+		"name": "Endif",
+		"description": "Closes \"if\" tag.",
+		"body": "{% endif %}",
+		"reference": "https://twig.symfony.com/doc/3.x/tags/if.html"
+	},
+	"else": {
+		"prefix": "else",
+		"name": "Else",
+		"description": "Conditional statement. Allows conditional execution of code fragments.",
+		"body": "{% else %}",
+		"reference": "https://twig.symfony.com/doc/3.x/tags/else.html"
+	},
+	"import": {
+		"prefix": "import",
+		"name": "Import",
+		"description": "Imports macro names in a local variable.",
+		"body": "{% import '${template}' as ${name} %}",
+		"reference": "https://twig.symfony.com/doc/3.x/tags/import.html"
+	},
+	"include": {
+		"prefix": "include",
+		"name": "Include",
+		"description": "Includes a template and outputs the rendered content of that file.",
+		"body": "{% include '${template}' %}",
+		"reference": "https://twig.symfony.com/doc/3.x/tags/include.html"
+	},
+	"macro": {
+		"prefix": "macro",
+		"name": "Macro",
+		"description": "Reuses template fragments.",
+		"body": "{% macro ${name}(${arguments}) %}\n\t...\n{% endmacro %}",
+		"reference": "https://twig.symfony.com/doc/3.x/tags/macro.html"
+	},
+	"endmacro": {
+		"prefix": "endmacro",
+		"name": "Endmacro",
+		"description": "Closes \"macro\" tag.",
+		"body": "{% endmacro %}",
+		"reference": "https://twig.symfony.com/doc/3.x/tags/macro.html"
+	},
+	"sandbox": {
+		"prefix": "sandbox",
+		"name": "Sandbox",
+		"description": "Enables the sandbox mode for an included template.",
+		"body": "{% sandbox %}\t{% include '${template}' %}{% endsandbox %}",
+		"reference": "https://twig.symfony.com/doc/3.x/tags/sandbox.html"
+	},
+	"endsandbox": {
+		"prefix": "endsandbox",
+		"name": "Endsandbox",
+		"description": "Closes \"sandbox\" tag.",
+		"body": "{% endsandbox %}",
+		"reference": "https://twig.symfony.com/doc/3.x/tags/sandbox.html"
+	},
+	"set": {
+		"prefix": "set",
+		"name": "Set",
+		"description": "Assigns value to a variable.",
+		"body": "{% set ${variable} = ${value} %}",
+		"reference": "https://twig.symfony.com/doc/3.x/tags/set.html"
+	},
+	"set-block": {
+		"prefix": "set-block",
+		"name": "Set (block)",
+		"description": "Assigns code fragment to a variable.",
+		"body": "{% set ${variable} %}\n\t...\n{% endset %}",
+		"reference": "https://twig.symfony.com/doc/3.x/tags/set.html"
+	},
+	"endset-block": {
+		"prefix": "endset-block",
+		"name": "Endset (block)",
+		"description": "Closes \"set\" block tag.",
+		"body": "{% endset %}",
+		"reference": "https://twig.symfony.com/doc/3.x/tags/set.html"
+	},
+	"use": {
+		"prefix": "use",
+		"name": "Use",
+		"description": "Import the blocks defined in 'blocks.html' into the current template. Works like macros, but for blocks.",
+		"body": "{% use '${template}' %}",
+		"reference": "https://twig.symfony.com/doc/3.x/tags/use.html"
+	},
+	"verbatim": {
+		"prefix": "verbatim",
+		"name": "Verbatim",
+		"description": "Marks section as being raw text that should not be parsed.",
+		"body": "{% verbatim %}\n\t...\n{% endverbatim %}",
+		"reference": "https://twig.symfony.com/doc/3.x/tags/verbatim.html"
+	},
+	"endverbatim": {
+		"prefix": "endverbatim",
+		"name": "Endverbatim",
+		"description": "Closes \"verbatim\" tag.",
+		"body": "{% endverbatim %}",
+		"reference": "https://twig.symfony.com/doc/3.x/tags/verbatim.html"
+	},
+	"with": {
+		"prefix": "with",
+		"name": "With",
+		"description": "Creates a new inner scope. Variables set within this scope are not visible outside.",
+		"body": "{% with { ${variable}: ${value} } %}\n\t...\n{% with %}",
+		"reference": "https://twig.symfony.com/doc/3.x/tags/with.html"
+	}
 }

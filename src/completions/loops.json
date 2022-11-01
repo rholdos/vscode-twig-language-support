@@ -1,42 +1,42 @@
 {
-  "first": {
-    "label": "first",
-    "detail": "True for the first iteration.",
-    "insertText": "first"
-  },
-  "index": {
-    "label": "index",
-    "detail": "Current iteration of the sequence, indexed from 1.",
-    "insertText": "index"
-  },
-  "index0": {
-    "label": "index0",
-    "detail": "Current iteration of the sequence, indexed from 0.",
-    "insertText": "index0"
-  },
-  "last": {
-    "label": "last",
-    "detail": "True for the last iteration.",
-    "insertText": "last"
-  },
-  "length": {
-    "label": "length",
-    "detail": "The number of items in the sequence.",
-    "insertText": "length"
-  },
-  "parent": {
-    "label": "parent",
-    "detail": "The parent context of the item.",
-    "insertText": "parent"
-  },
-  "revindex": {
-    "label": "revindex",
-    "detail": "Current iteration from the end of the sequence, indexed from 0.",
-    "insertText": "revindex"
-  },
-  "revindex0": {
-    "label": "revindex0",
-    "detail": "Current iteration from the end of the sequence, indexed from 1.",
-    "insertText": "revindex0"
-  }
+	"first": {
+		"label": "first",
+		"detail": "True for the first iteration.",
+		"insertText": "first"
+	},
+	"index": {
+		"label": "index",
+		"detail": "Current iteration of the sequence, indexed from 1.",
+		"insertText": "index"
+	},
+	"index0": {
+		"label": "index0",
+		"detail": "Current iteration of the sequence, indexed from 0.",
+		"insertText": "index0"
+	},
+	"last": {
+		"label": "last",
+		"detail": "True for the last iteration.",
+		"insertText": "last"
+	},
+	"length": {
+		"label": "length",
+		"detail": "The number of items in the sequence.",
+		"insertText": "length"
+	},
+	"parent": {
+		"label": "parent",
+		"detail": "The parent context of the item.",
+		"insertText": "parent"
+	},
+	"revindex": {
+		"label": "revindex",
+		"detail": "Current iteration from the end of the sequence, indexed from 0.",
+		"insertText": "revindex"
+	},
+	"revindex0": {
+		"label": "revindex0",
+		"detail": "Current iteration from the end of the sequence, indexed from 1.",
+		"insertText": "revindex0"
+	}
 }

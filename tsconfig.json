@@ -1,13 +1,13 @@
 {
-  "compilerOptions": {
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "lib": ["es6"],
-    "rootDir": "src",
-    "outDir": "build",
-    "removeComments": true,
-    "esModuleInterop": true,
-    "resolveJsonModule": true
-  },
-  "exclude": ["node_modules"]
+	"compilerOptions": {
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"lib": ["es6"],
+		"rootDir": "src",
+		"outDir": "build",
+		"removeComments": true,
+		"esModuleInterop": true,
+		"resolveJsonModule": true
+	},
+	"exclude": ["node_modules"]
 }

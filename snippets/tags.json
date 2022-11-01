@@ -1,112 +1,167 @@
 {
-  "apply": {
-    "prefix": "apply",
-    "description": "Applies Twig filters on a block of template data. Filters can be chained and accept arguments.",
-    "body": "{% apply '${1:filter}' %}\n\t$2\n{% endapply %}"
-  },
-  "autoescape": {
-    "prefix": "autoescape",
-    "description": "Applies automatic escaping on a block of template data. More escaping strategies are available (html | js | ...) ",
-    "body": "{% autoescape '${1:strategy}' %}\n\t$2\n{% endautoescape %}"
-  },
-  "block": {
-    "prefix": "block",
-    "description": "Prints a block of template data from another template.",
-    "body": "{% block '${1:name}' %}\n\t$3\n{% endblock '${2:name}' %}"
-  },
-  "cache": {
-    "prefix": "cache",
-    "description": "Caches a template fragment for given amount of time in seconds.",
-    "body": "{% cache '${1:cacheKey}' ttl(${2:cacheTTL}) %}\n\t$3\n{% endcache %}"
-  },
-  "deprecated": {
-    "prefix": "deprecated",
-    "description": "Generates a deprecation notice, when the deprecated tag is used in a template.",
-    "body": "{% deprecated '${1:notice}' %}"
-  },
-  "do": {
-    "prefix": "do",
-    "description": "Works exactly like the regular variable expression ({{ ... }}) just that it doesn't print anything.",
-    "body": "{% do ${1:expression} %}"
-  },
-  "else": {
-    "prefix": "else",
-    "description": "Conditional statement. Allows conditional execution of code fragments.",
-    "body": "{% else %}\n\t$2\n"
-  },
-  "embed": {
-    "prefix": "embed",
-    "description": "Includes another template's contents, but also allows you to override any block defined inside the included template.",
-    "body": "{% embed '${1:filename}.twig' %}\n\t$2\n{% endembed %}"
-  },
-  "extends": {
-    "prefix": "extends",
-    "description": "Extends another template.",
-    "body": "{% extends '${1:filename}.twig' %}"
-  },
-  "flush": {
-    "prefix": "flush",
-    "description": "Flushes the output buffer.",
-    "body": "{% flush %}"
-  },
-  "for": {
-    "prefix": "for",
-    "description": "Loops over each item in a sequence.",
-    "body": "{% for ${1:item} in ${2:sequence} %}\n\t$3\n{% endfor %}"
-  },
-  "from": {
-    "prefix": "from",
-    "description": "Imports macro names into the current namespace.",
-    "body": "{% from '${1:template}' import ${2:name} %}"
-  },
-  "if": {
-    "prefix": "if",
-    "description": "Conditional statement. Allows conditional execution of code fragments.",
-    "body": "{% if ${1:condition} %}\n\t$2\n{% endif %}"
-  },
-  "import": {
-    "prefix": "import",
-    "description": "Imports macro names in a local variable.",
-    "body": "{% import '${1:template}' as ${2:name} %}"
-  },
-  "include": {
-    "prefix": "include",
-    "description": "Includes a template and outputs the rendered content of that file.",
-    "body": "{% include '${1:template}' %}"
-  },
-  "macro": {
-    "prefix": "macro",
-    "description": "Reuses template fragments.",
-    "body": "{% macro ${1:name}(${2:arguments}) %}\n\t$3\n{% endmacro %}"
-  },
-  "sandbox": {
-    "prefix": "sandbox",
-    "description": "Enables the sandbox mode for an included template.",
-    "body": "{% sandbox %}\t{% include '${1:template}' %}{% endsandbox %}"
-  },
-  "set": {
-    "prefix": "set",
-    "description": "Assigns value to a variable.",
-    "body": "{% set ${1:variable} = ${2:value} %}"
-  },
-  "set block": {
-    "prefix": "set block",
-    "description": "Assigns code fragment to a variable.",
-    "body": "{% set ${1:variable} %}\n\t$2\n{% endset %}"
-  },
-  "use": {
-    "prefix": "use",
-    "description": "Import the blocks defined in 'blocks.html' into the current template. Works like macros, but for blocks.",
-    "body": "{% use '${1:template}' %}"
-  },
-  "verbatim": {
-    "prefix": "verbatim",
-    "description": "Marks section as being raw text that should not be parsed.",
-    "body": "{% verbatim %}\n\t$1\n{% endverbatim %}"
-  },
-  "with": {
-    "prefix": "with",
-    "description": "Creates a new inner scope. Variables set within this scope are not visible outside.",
-    "body": "{% with { ${1:variable}: ${2:value} } %}\n\t$3\n{% with %}"
-  }
+	"apply": {
+		"prefix": "apply",
+		"description": "Applies Twig filters on a block of template data. Filters can be chained and accept arguments.",
+		"body": "{% apply ${1:filter} %}\n\t$2\n{% endapply %}"
+	},
+	"endapply": {
+		"prefix": "endapply",
+		"description": "Closes \"apply\" tag.",
+		"body": "{% endapply %}"
+	},
+	"autoescape": {
+		"prefix": "autoescape",
+		"description": "Applies automatic escaping on a block of template data. More escaping strategies are available (html | js | ...).",
+		"body": "{% autoescape '${1:strategy}' %}\n\t$2\n{% endautoescape %}"
+	},
+	"endautoescape": {
+		"prefix": "endautoescape",
+		"description": "Closes \"autoescape\" tag.",
+		"body": "{% endautoescape %}"
+	},
+	"block": {
+		"prefix": "block",
+		"description": "Prints a block of template data from another template.",
+		"body": "{% block ${1:name} %}\n\t$3\n{% endblock %}"
+	},
+	"endblock": {
+		"prefix": "endblock",
+		"description": "Closes \"block\" tag.",
+		"body": "{% endblock %}"
+	},
+	"cache": {
+		"prefix": "cache",
+		"description": "Caches a template fragment for given amount of time in seconds.",
+		"body": "{% cache '${1:cacheKey}' ttl(${2:cacheTTL}) %}\n\t$3\n{% endcache %}"
+	},
+	"endcache": {
+		"prefix": "endcache",
+		"description": "Closes \"cache\" tag.",
+		"body": "{% endcache %}"
+	},
+	"deprecated": {
+		"prefix": "deprecated",
+		"description": "Generates a deprecation notice, when the deprecated tag is used in a template.",
+		"body": "{% deprecated '${1:notice}' %}"
+	},
+	"do": {
+		"prefix": "do",
+		"description": "Works exactly like the regular variable expression ({{ ... }}) just that it doesn't print anything.",
+		"body": "{% do ${1:expression} %}"
+	},
+	"else": {
+		"prefix": "else",
+		"description": "Conditional statement. Allows conditional execution of code fragments.",
+		"body": "{% else %}\n\t$2\n"
+	},
+	"embed": {
+		"prefix": "embed",
+		"description": "Includes another template's contents, but also allows you to override any block defined inside the included template.",
+		"body": "{% embed '${1:filename}.twig' %}\n\t$2\n{% endembed %}"
+	},
+	"endembed": {
+		"prefix": "endembed",
+		"description": "Closes \"embed\" tag.",
+		"body": "{% endembed %}"
+	},
+	"extends": {
+		"prefix": "extends",
+		"description": "Extends another template.",
+		"body": "{% extends '${1:filename}.twig' %}"
+	},
+	"flush": {
+		"prefix": "flush",
+		"description": "Flushes the output buffer.",
+		"body": "{% flush %}"
+	},
+	"for": {
+		"prefix": "for",
+		"description": "Loops over each item in a sequence.",
+		"body": "{% for ${1:item} in ${2:sequence} %}\n\t$3\n{% endfor %}"
+	},
+	"endfor": {
+		"prefix": "endfor",
+		"description": "Closes \"end\" tag.",
+		"body": "{% endfor %}"
+	},
+	"from": {
+		"prefix": "from",
+		"description": "Imports macro names into the current namespace.",
+		"body": "{% from '${1:template}' import ${2:name} %}"
+	},
+	"if": {
+		"prefix": "if",
+		"description": "Conditional statement. Allows conditional execution of code fragments.",
+		"body": "{% if ${1:condition} %}\n\t$2\n{% endif %}"
+	},
+	"endif": {
+		"prefix": "endif",
+		"description": "Closes \"if\" tag.",
+		"body": "{% endif %}"
+	},
+	"import": {
+		"prefix": "import",
+		"description": "Imports macro names in a local variable.",
+		"body": "{% import '${1:template}' as ${2:name} %}"
+	},
+	"include": {
+		"prefix": "include",
+		"description": "Includes a template and outputs the rendered content of that file.",
+		"body": "{% include '${1:template}' %}"
+	},
+	"macro": {
+		"prefix": "macro",
+		"description": "Reuses template fragments.",
+		"body": "{% macro ${1:name}(${2:arguments}) %}\n\t$3\n{% endmacro %}"
+	},
+	"endmacro": {
+		"prefix": "endmacro",
+		"description": "Closes \"macro\" tag.",
+		"body": "{% endmacro %}"
+	},
+	"sandbox": {
+		"prefix": "sandbox",
+		"description": "Enables the sandbox mode for an included template.",
+		"body": "{% sandbox %}\t{% include '${1:template}' %}{% endsandbox %}"
+	},
+	"endsandbox": {
+		"prefix": "endsandbox",
+		"description": "Closes \"sandbox\" tag.",
+		"body": "{% endsandbox %}"
+	},
+	"set": {
+		"prefix": "set",
+		"description": "Assigns value to a variable.",
+		"body": "{% set ${1:variable} = ${2:value} %}"
+	},
+	"set-block": {
+		"prefix": "set-block",
+		"description": "Assigns code fragment to a variable.",
+		"body": "{% set ${1:variable} %}\n\t$2\n{% endset %}"
+	},
+	"endset-block": {
+		"prefix": "endset-block",
+		"description": "Closes \"set\" block tag.",
+		"body": "{% endset %}"
+	},
+	"use": {
+		"prefix": "use",
+		"description": "Import the blocks defined in 'blocks.html' into the current template. Works like macros, but for blocks.",
+		"body": "{% use '${1:template}' %}"
+	},
+	"verbatim": {
+		"prefix": "verbatim",
+		"description": "Marks section as being raw text that should not be parsed.",
+		"body": "{% verbatim %}\n\t$1\n{% endverbatim %}"
+	},
+	"endverbatim": {
+		"prefix": "endverbatim",
+		"description": "Closes \"verbatim\" tag.",
+		"body": "{% endverbatim %}"
+	},
+	"with": {
+		"prefix": "with",
+		"description": "Creates a new inner scope. Variables set within this scope are not visible outside.",
+		"body": "{% with { ${1:variable}: ${2:value} } %}\n\t$3\n{% with %}"
+	}
 }

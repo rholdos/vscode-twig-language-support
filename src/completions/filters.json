@@ -1,272 +1,272 @@
 {
-  "abs": {
-    "label": "abs",
-    "detail": "Returns the absolute value.",
-    "insertText": "abs"
-  },
-  "batch": {
-    "label": "batch",
-    "detail": "Returns a list of lists with the given number of items.",
-    "insertText": "batch(${1:size}, ${2:fill}, ${3:preserveKeys})"
-  },
-  "capitalize": {
-    "label": "capitalize",
-    "detail": "Capitalizes a the first letter of the given string.",
-    "insertText": "capitalize"
-  },
-  "column": {
-    "label": "column",
-    "detail": "Returns the values from a single column in the given array.",
-    "insertText": "column('${1:name}')"
-  },
-  "convert_encoding": {
-    "label": "convert_encoding",
-    "detail": "Converts a string from one encoding to another.",
-    "insertText": "convert_encoding('${1:to}', '${2:from}')"
-  },
-  "country_name": {
-    "label": "country_name",
-    "detail": "Returns the country name given its ISO-3166 two-letter code.",
-    "insertText": "country_name('${1:locale}')"
-  },
-  "currency_name": {
-    "label": "currency_name",
-    "detail": "Returns the currency name given its three-letter code.",
-    "insertText": "currency_name('${1:locale}')"
-  },
-  "currency_symbol": {
-    "label": "currency_symbol",
-    "detail": "Returns the currency symbol given its three-letter code.",
-    "insertText": "currency_symbol('${1:locale}')"
-  },
-  "data_uri": {
-    "label": "data_uri",
-    "detail": "Generates a URL using the data scheme as defined in RFC 2397.",
-    "insertText": "data_uri('${1:mime}', ${2:parameters})"
-  },
-  "date": {
-    "label": "date",
-    "detail": "Formats a date to a given format.",
-    "insertText": "date('${1:format}', '${2:timezone}')"
-  },
-  "date_modify": {
-    "label": "date_modify",
-    "detail": "Modifies a date with a given modifier string.",
-    "insertText": "date_modify('${1:modifier}')"
-  },
-  "default": {
-    "label": "default",
-    "detail": "Returns the passed default value if the value is undefined or empty, otherwise the value of the variable.",
-    "insertText": "default('${1:defaultValue}')"
-  },
-  "escape": {
-    "label": "escape",
-    "detail": "Escapes a string using strategies that depend on the context.",
-    "insertText": "escape('${1:strategy}', '${2:charset}')"
-  },
-  "filter": {
-    "label": "filter",
-    "detail": "Filters elements of a sequence using an arrow function.",
-    "insertText": "filter(${1:sequence}, ${2:arrowFunction})"
-  },
-  "first": {
-    "label": "first",
-    "detail": ".Returns the first element of a sequence.",
-    "insertText": "first"
-  },
-  "format": {
-    "label": "format",
-    "detail": "Formats a given string by replacing the placeholders. Equivalent to 'sprintf' in PHP.",
-    "insertText": "format(${1:replacePairs})"
-  },
-  "format_currency": {
-    "label": "format_currency",
-    "detail": "Formats a number as a currency.",
-    "insertText": "format_currency('${1:currency}', {${2:attrs}}, '${3:locale}')"
-  },
-  "format_date": {
-    "label": "format_date",
-    "detail": "Formats a date.",
-    "insertText": "format_date('${1:locale}', '${2:dateFormat}', '${3:pattern}', '${4:timezone}', '${5:calendar}')"
-  },
-  "format_datetime": {
-    "label": "format_datetime",
-    "detail": "Formats a date time.",
-    "insertText": "format_datetime('${1:locale}', '${2:dateFormat}', '${3:timeFormat}', '${4:pattern}', '${5:timezone}', '${6:calendar}')"
-  },
-  "format_number": {
-    "label": "format_number",
-    "detail": "Formats a number.",
-    "insertText": "format_number('${1:locale}', {${2:attrs}}, ${3:style})"
-  },
-  "format_time": {
-    "label": "format_time",
-    "detail": ".",
-    "insertText": "format_time('${1:locale}', '${2:timeFormat}', '${3:pattern}', '${4:timezone}', '${5:calendar}')"
-  },
-  "html_to_markdown": {
-    "label": "html_to_markdown",
-    "detail": "Converts a block of HTML to Markdown.",
-    "insertText": "html_to_markdown"
-  },
-  "inky_to_html": {
-    "label": "inky_to_html",
-    "detail": "Processes an 'inky' email template.",
-    "insertText": "inky_to_html"
-  },
-  "inline_css": {
-    "label": "inline_css",
-    "detail": "Filters inline CSS styles in HTML documents.",
-    "insertText": "inline_css(source('${1:stylesheetFilePath}'))"
-  },
-  "join": {
-    "label": "join",
-    "detail": "Returns a string which is the concatenation of the items of the given sequence. A second parameter can also be provided that will be the separator used between the last two items of the sequence.",
-    "insertText": "join('${1:glue}', '${2:and}')"
-  },
-  "json_encode": {
-    "label": "json_encode",
-    "detail": "Returns the JSON representation of a value.",
-    "insertText": "json_encode(${1:options})"
-  },
-  "keys": {
-    "label": "keys",
-    "detail": "Returns the keys of an array.",
-    "insertText": "keys"
-  },
-  "language_name": {
-    "label": "language_name",
-    "detail": "Returns the language name given its two-letter code.",
-    "insertText": "language_name('${1:locale}')"
-  },
-  "last": {
-    "label": "last",
-    "detail": "Returns the last element of a sequence or a string.",
-    "insertText": "last"
-  },
-  "length": {
-    "label": "length",
-    "detail": "Returns the number of items of a sequence or the length of a string.",
-    "insertText": "length"
-  },
-  "locale_name": {
-    "label": "locale_name",
-    "detail": "Returns the locale name given its two-letter code.",
-    "insertText": "locale_name('${1:locale}')"
-  },
-  "lower": {
-    "label": "lower",
-    "detail": "Converts a value to lowercase.",
-    "insertText": "lower"
-  },
-  "map": {
-    "label": "map",
-    "detail": "Applies an arrow function to the elements of a sequence.",
-    "insertText": "map(${1:arrowFunction})"
-  },
-  "markdown_to_html": {
-    "label": "markdown_to_html",
-    "detail": "Converts a block of Markdown to HTML.",
-    "insertText": "markdown_to_html"
-  },
-  "merge": {
-    "label": "merge",
-    "detail": "Merges an array with another array.",
-    "insertText": "merge(${1:array})"
-  },
-  "nl2br": {
-    "label": "nl2br",
-    "detail": "Inserts HTML line breaks before all newlines in a string.",
-    "insertText": "nl2br"
-  },
-  "number_format": {
-    "label": "number_format",
-    "detail": "Formats a number.",
-    "insertText": "number_format(${1:decimal}, '${2:decimal_point}', '${3:thousand_sep}')"
-  },
-  "raw": {
-    "label": "raw",
-    "detail": "Marks the value as being 'safe', which means that this variable will not be auto-escaped.",
-    "insertText": "raw"
-  },
-  "reduce": {
-    "label": "reduce",
-    "detail": "Iteratively reduces a sequence to a single value using an arrow function.",
-    "insertText": "reduce(${1:arrowFunction}, ${2:initialValue})"
-  },
-  "replace": {
-    "label": "replace",
-    "detail": "Formats a given string by replacing the placeholders.",
-    "insertText": "replace({${1:replacePairs}})"
-  },
-  "reverse": {
-    "label": "reverse",
-    "detail": "Reverses a sequence or a string.",
-    "insertText": "reverse(${1:preserveKeys})"
-  },
-  "round": {
-    "label": "round",
-    "detail": "Rounds a number to a given precision.",
-    "insertText": "round(${1:precision}, '${2:method}')"
-  },
-  "slice": {
-    "label": "slice",
-    "detail": "Extracts a slice of a sequence or a string.",
-    "insertText": "slice(${1:start}, ${2:length}, ${3:preserve_keys})"
-  },
-  "slug": {
-    "label": "slug",
-    "detail": "Transforms a given string into another string that only includes safe ASCII characters.",
-    "insertText": "slug('${1:separator}', '${2:locale}')"
-  },
-  "sort": {
-    "label": "sort",
-    "detail": "Sorts an array.",
-    "insertText": "sort(${1:arrowFunction})"
-  },
-  "spaceless": {
-    "label": "spaceless",
-    "detail": "Remove whitespace between HTML tags (not whitespace within HTML tags or whitespace in plain text).",
-    "insertText": "spaceless"
-  },
-  "split": {
-    "label": "split",
-    "detail": "Splits a string by the given delimiter and returns a list of strings.",
-    "insertText": "split('${1:delimiter}', ${2:limit})"
-  },
-  "striptags": {
-    "label": "striptags",
-    "detail": "Strips SGML/XML tags and replace adjacent whitespace by one space.",
-    "insertText": "striptags('${1:allowableTags}')"
-  },
-  "timezone_name": {
-    "label": "timezone_name",
-    "detail": "Returns the timezone name given a timezone identifier.",
-    "insertText": "timezone_name('${2:locale}')"
-  },
-  "title": {
-    "label": "title",
-    "detail": "Returns a titlecased version of the value. names will start with uppercase letters, all remaining characters are lowercase.",
-    "insertText": "title"
-  },
-  "trim": {
-    "label": "trim",
-    "detail": "Strips whitespace or other characters from the beginning and end of a string.",
-    "insertText": "trim(${1:characterMask}, ${2:side})"
-  },
-  "u": {
-    "label": "u",
-    "detail": "Wraps a text in a Unicode object (a Symfony UnicodeString instance) that exposes methods to 'manipulate' the string.",
-    "insertText": "u"
-  },
-  "upper": {
-    "label": "upper",
-    "detail": "Converts a value to uppercase.",
-    "insertText": "upper"
-  },
-  "url_encode": {
-    "label": "url_encode",
-    "detail": "Encodes a given string as URL segment or an array as query string.",
-    "insertText": "url_encode"
-  }
+	"abs": {
+		"label": "abs",
+		"detail": "Returns the absolute value.",
+		"insertText": "abs"
+	},
+	"batch": {
+		"label": "batch",
+		"detail": "Returns a list of lists with the given number of items.",
+		"insertText": "batch(${1:size}, ${2:fill}, ${3:preserveKeys})"
+	},
+	"capitalize": {
+		"label": "capitalize",
+		"detail": "Capitalizes a the first letter of the given string.",
+		"insertText": "capitalize"
+	},
+	"column": {
+		"label": "column",
+		"detail": "Returns the values from a single column in the given array.",
+		"insertText": "column('${1:name}')"
+	},
+	"convert_encoding": {
+		"label": "convert_encoding",
+		"detail": "Converts a string from one encoding to another.",
+		"insertText": "convert_encoding('${1:to}', '${2:from}')"
+	},
+	"country_name": {
+		"label": "country_name",
+		"detail": "Returns the country name given its ISO-3166 two-letter code.",
+		"insertText": "country_name('${1:locale}')"
+	},
+	"currency_name": {
+		"label": "currency_name",
+		"detail": "Returns the currency name given its three-letter code.",
+		"insertText": "currency_name('${1:locale}')"
+	},
+	"currency_symbol": {
+		"label": "currency_symbol",
+		"detail": "Returns the currency symbol given its three-letter code.",
+		"insertText": "currency_symbol('${1:locale}')"
+	},
+	"data_uri": {
+		"label": "data_uri",
+		"detail": "Generates a URL using the data scheme as defined in RFC 2397.",
+		"insertText": "data_uri('${1:mime}', ${2:parameters})"
+	},
+	"date": {
+		"label": "date",
+		"detail": "Formats a date to a given format.",
+		"insertText": "date('${1:format}', '${2:timezone}')"
+	},
+	"date_modify": {
+		"label": "date_modify",
+		"detail": "Modifies a date with a given modifier string.",
+		"insertText": "date_modify('${1:modifier}')"
+	},
+	"default": {
+		"label": "default",
+		"detail": "Returns the passed default value if the value is undefined or empty, otherwise the value of the variable.",
+		"insertText": "default('${1:defaultValue}')"
+	},
+	"escape": {
+		"label": "escape",
+		"detail": "Escapes a string using strategies that depend on the context.",
+		"insertText": "escape('${1:strategy}', '${2:charset}')"
+	},
+	"filter": {
+		"label": "filter",
+		"detail": "Filters elements of a sequence using an arrow function.",
+		"insertText": "filter(${1:sequence}, ${2:arrowFunction})"
+	},
+	"first": {
+		"label": "first",
+		"detail": ".Returns the first element of a sequence.",
+		"insertText": "first"
+	},
+	"format": {
+		"label": "format",
+		"detail": "Formats a given string by replacing the placeholders. Equivalent to 'sprintf' in PHP.",
+		"insertText": "format(${1:replacePairs})"
+	},
+	"format_currency": {
+		"label": "format_currency",
+		"detail": "Formats a number as a currency.",
+		"insertText": "format_currency('${1:currency}', {${2:attrs}}, '${3:locale}')"
+	},
+	"format_date": {
+		"label": "format_date",
+		"detail": "Formats a date.",
+		"insertText": "format_date('${1:locale}', '${2:dateFormat}', '${3:pattern}', '${4:timezone}', '${5:calendar}')"
+	},
+	"format_datetime": {
+		"label": "format_datetime",
+		"detail": "Formats a date time.",
+		"insertText": "format_datetime('${1:locale}', '${2:dateFormat}', '${3:timeFormat}', '${4:pattern}', '${5:timezone}', '${6:calendar}')"
+	},
+	"format_number": {
+		"label": "format_number",
+		"detail": "Formats a number.",
+		"insertText": "format_number('${1:locale}', {${2:attrs}}, ${3:style})"
+	},
+	"format_time": {
+		"label": "format_time",
+		"detail": ".",
+		"insertText": "format_time('${1:locale}', '${2:timeFormat}', '${3:pattern}', '${4:timezone}', '${5:calendar}')"
+	},
+	"html_to_markdown": {
+		"label": "html_to_markdown",
+		"detail": "Converts a block of HTML to Markdown.",
+		"insertText": "html_to_markdown"
+	},
+	"inky_to_html": {
+		"label": "inky_to_html",
+		"detail": "Processes an 'inky' email template.",
+		"insertText": "inky_to_html"
+	},
+	"inline_css": {
+		"label": "inline_css",
+		"detail": "Filters inline CSS styles in HTML documents.",
+		"insertText": "inline_css(source('${1:stylesheetFilePath}'))"
+	},
+	"join": {
+		"label": "join",
+		"detail": "Returns a string which is the concatenation of the items of the given sequence. A second parameter can also be provided that will be the separator used between the last two items of the sequence.",
+		"insertText": "join('${1:glue}', '${2:and}')"
+	},
+	"json_encode": {
+		"label": "json_encode",
+		"detail": "Returns the JSON representation of a value.",
+		"insertText": "json_encode(${1:options})"
+	},
+	"keys": {
+		"label": "keys",
+		"detail": "Returns the keys of an array.",
+		"insertText": "keys"
+	},
+	"language_name": {
+		"label": "language_name",
+		"detail": "Returns the language name given its two-letter code.",
+		"insertText": "language_name('${1:locale}')"
+	},
+	"last": {
+		"label": "last",
+		"detail": "Returns the last element of a sequence or a string.",
+		"insertText": "last"
+	},
+	"length": {
+		"label": "length",
+		"detail": "Returns the number of items of a sequence or the length of a string.",
+		"insertText": "length"
+	},
+	"locale_name": {
+		"label": "locale_name",
+		"detail": "Returns the locale name given its two-letter code.",
+		"insertText": "locale_name('${1:locale}')"
+	},
+	"lower": {
+		"label": "lower",
+		"detail": "Converts a value to lowercase.",
+		"insertText": "lower"
+	},
+	"map": {
+		"label": "map",
+		"detail": "Applies an arrow function to the elements of a sequence.",
+		"insertText": "map(${1:arrowFunction})"
+	},
+	"markdown_to_html": {
+		"label": "markdown_to_html",
+		"detail": "Converts a block of Markdown to HTML.",
+		"insertText": "markdown_to_html"
+	},
+	"merge": {
+		"label": "merge",
+		"detail": "Merges an array with another array.",
+		"insertText": "merge(${1:array})"
+	},
+	"nl2br": {
+		"label": "nl2br",
+		"detail": "Inserts HTML line breaks before all newlines in a string.",
+		"insertText": "nl2br"
+	},
+	"number_format": {
+		"label": "number_format",
+		"detail": "Formats a number.",
+		"insertText": "number_format(${1:decimal}, '${2:decimal_point}', '${3:thousand_sep}')"
+	},
+	"raw": {
+		"label": "raw",
+		"detail": "Marks the value as being 'safe', which means that this variable will not be auto-escaped.",
+		"insertText": "raw"
+	},
+	"reduce": {
+		"label": "reduce",
+		"detail": "Iteratively reduces a sequence to a single value using an arrow function.",
+		"insertText": "reduce(${1:arrowFunction}, ${2:initialValue})"
+	},
+	"replace": {
+		"label": "replace",
+		"detail": "Formats a given string by replacing the placeholders.",
+		"insertText": "replace({${1:replacePairs}})"
+	},
+	"reverse": {
+		"label": "reverse",
+		"detail": "Reverses a sequence or a string.",
+		"insertText": "reverse(${1:preserveKeys})"
+	},
+	"round": {
+		"label": "round",
+		"detail": "Rounds a number to a given precision.",
+		"insertText": "round(${1:precision}, '${2:method}')"
+	},
+	"slice": {
+		"label": "slice",
+		"detail": "Extracts a slice of a sequence or a string.",
+		"insertText": "slice(${1:start}, ${2:length}, ${3:preserve_keys})"
+	},
+	"slug": {
+		"label": "slug",
+		"detail": "Transforms a given string into another string that only includes safe ASCII characters.",
+		"insertText": "slug('${1:separator}', '${2:locale}')"
+	},
+	"sort": {
+		"label": "sort",
+		"detail": "Sorts an array.",
+		"insertText": "sort(${1:arrowFunction})"
+	},
+	"spaceless": {
+		"label": "spaceless",
+		"detail": "Remove whitespace between HTML tags (not whitespace within HTML tags or whitespace in plain text).",
+		"insertText": "spaceless"
+	},
+	"split": {
+		"label": "split",
+		"detail": "Splits a string by the given delimiter and returns a list of strings.",
+		"insertText": "split('${1:delimiter}', ${2:limit})"
+	},
+	"striptags": {
+		"label": "striptags",
+		"detail": "Strips SGML/XML tags and replace adjacent whitespace by one space.",
+		"insertText": "striptags('${1:allowableTags}')"
+	},
+	"timezone_name": {
+		"label": "timezone_name",
+		"detail": "Returns the timezone name given a timezone identifier.",
+		"insertText": "timezone_name('${2:locale}')"
+	},
+	"title": {
+		"label": "title",
+		"detail": "Returns a titlecased version of the value. names will start with uppercase letters, all remaining characters are lowercase.",
+		"insertText": "title"
+	},
+	"trim": {
+		"label": "trim",
+		"detail": "Strips whitespace or other characters from the beginning and end of a string.",
+		"insertText": "trim(${1:characterMask}, ${2:side})"
+	},
+	"u": {
+		"label": "u",
+		"detail": "Wraps a text in a Unicode object (a Symfony UnicodeString instance) that exposes methods to 'manipulate' the string.",
+		"insertText": "u"
+	},
+	"upper": {
+		"label": "upper",
+		"detail": "Converts a value to uppercase.",
+		"insertText": "upper"
+	},
+	"url_encode": {
+		"label": "url_encode",
+		"detail": "Encodes a given string as URL segment or an array as query string.",
+		"insertText": "url_encode"
+	}
 }
